@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi</title>
+</head>
+<body>
+
+    <h2>Form Registrasi</h2>
+
+    <form action="" method="post" enctype="multipart/form-data">
+        
+        <!-- Fieldset Biodata -->
+        <fieldset>
+            <legend>Biodata</legend>
+            <table cellpadding="4" cellspacing="0">
+                <tr>
+                    <td width="200"><label for="nama">Nama Mahasiswa</label></td>
+                    <td>: <input type="text" name="nama" id="nama" placeholder="Nama Anda" size="30"></td>
+                </tr>
+                <tr>
+                    <td><label for="nim">No Induk Mahasiswa (NIM)</label></td>
+                    <td>: <input type="text" name="nim" id="nim" value="108052500076" size="30"></td>
+                </tr>
+                <tr valign="top">
+                    <td><label for="alamat">Alamat Mahasiswa</label></td>
+                    <td>: <textarea name="alamat" id="alamat" cols="40" rows="5" placeholder="Alamat Anda"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Tanggal Lahir</td>
+                    <td>: 
+                        <select name="tgl">
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <!-- dst -->
+                        </select>
+                        <select name="bln">
+                            <option value="Januari">Januari</option>
+                            <option value="Februari">Februari</option>
+                            <option value="Maret">Maret</option>
+                            <option value="April">April</option>
+                            <option value="Mei">Mei</option>
+                            <option value="Juni">Juni</option>
+                            <option value="Juli">Juli</option>
+                            <option value="Agustus">Agustus</option>
+                            <option value="September">September</option>
+                            <option value="Oktober">Oktober</option>
+                            <option value="November">November</option>
+                            <option value="Desember">Desember</option>
+                        </select>
+                        <select name="thn">
+                            <option value="1990">1990</option>
+                            <option value="1991">1991</option>
+                            <option value="2000">2000</option>
+                            <option value="2004">2004</option>
+                            <option value="2005">2005</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>: 
+                        <input type="radio" name="jk" id="pria" value="Pria" checked>
+                        <label for="pria">Pria</label>
+                        <input type="radio" name="jk" id="wanita" value="Wanita">
+                        <label for="wanita">Wanita</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Upload Foto</td>
+                    <td>: <input type="file" name="foto"></td>
+                </tr>
+                <tr>
+                    <td><label for="url">URL Website</label></td>
+                    <td>: <input type="url" name="url" id="url" placeholder="URL Website Anda" size="40"></td>
+                </tr>
+                <tr>
+                    <td><label for="kampus">Perguruan Tinggi</label></td>
+                    <td>: <input type="text" name="kampus" id="kampus" size="30"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <!-- Fieldset Info Akun -->
+        <fieldset>
+            <legend>Info Akun</legend>
+            <table cellpadding="4" cellspacing="0">
+                <tr>
+                    <td width="200"><label for="email">Email</label></td>
+                    <td>: <input type="email" name="email" id="email" placeholder="Email Anda" size="30"></td>
+                </tr>
+                <tr>
+                    <td><label for="username">Username</label></td>
+                    <td>: <input type="text" name="username" id="username" placeholder="Username Anda" size="30"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td>: <input type="password" name="password" id="password" placeholder="Password Anda" size="30"></td>
+                </tr>
+                <tr>
+                    <td><label for="ulang_password">Ulangi Password</label></td>
+                    <td>: <input type="password" name="ulang_password" id="ulang_password" placeholder="Password Anda" size="30"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <!-- Fieldset Kemampuan Dasar -->
+        <fieldset>
+            <legend>Kemampuan Dasar</legend>
+            <input type="checkbox" name="skill[]" id="html" value="HTML"><label for="html">HTML</label>
+            <input type="checkbox" name="skill[]" id="css" value="CSS"><label for="css">CSS</label>
+            <input type="checkbox" name="skill[]" id="js" value="Javascript"><label for="js">Javascript</label>
+            <input type="checkbox" name="skill[]" id="php" value="PHP"><label for="php">PHP</label>
+            <input type="checkbox" name="skill[]" id="mysql" value="MySQL"><label for="mysql">MySQL</label>
+            <input type="checkbox" name="skill[]" id="laravel" value="Laravel"><label for="laravel">Laravel</label>
+            <input type="checkbox" name="skill[]" id="react" value="React Native"><label for="react">React Native</label>
+        </fieldset>
+
+        <br>
+
+        <!-- Tombol Aksi -->
+        <input type="reset" value="Reset">
+        <input type="submit" value="Simpan">
+        <input type="button" value="Button">
+
+    </form>
+
+</body>
+</html>
